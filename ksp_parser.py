@@ -149,6 +149,7 @@ class Token(object):
         except UnicodeDecodeError:
             return 'equals' # probably
 def main(fileName):
+    token=None
     lines=open_file(fileName)
     if lines:
         token=Token('',0,lines)
